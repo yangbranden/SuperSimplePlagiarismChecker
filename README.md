@@ -1,5 +1,5 @@
 # SuperSimplePlagiarismChecker
-Very simple plagiarism checker created using Python and Flask
+Very simple plagiarism checker created using Python, Flask, and difflib
 
 Created for Introduction to Web Development w/ Python Workshop (Python Users Group Meeting 9/15/22)
 
