@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Counter App</title>
+  <style type="text/css">
+    body{
+      background: #b3caff;
+      text-align: center;
+    }
+    h1{
+      margin: 20px 0px;
+    }
+    .center{
+      margin: auto;
+      width: 20%;
+    }
+    .box{
+      font-size: 75px;
+      font-weight: bold;
+      color: blue;
+      background: #e6bbbb;
+      padding: 30px;
+      border: 2px solid #ec3535;
+      margin-top: 30px;
+      border-radius: 5%;
+    }
+    .btns{
+      margin-top: 30px;
+    }
+    .btn:hover{
+      opacity: 0.5;
+    }
+    .btn:active{
+      box-shadow: 3px 2px 22px 1px rgba(0,0,0,0.24);
+      transform: scale(0.88);
+    }
+    .btn{
+      padding: 2px 15px;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .btn-add{
+      background: green;
+      float: right;
+      border: 2px solid #346b3b;
+    }
+    .btn-subtract{
+      background: red;
+      float: left;
+      border: 2px solid #c34e4e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter App</h1>
+  <hr>
+  <div class="box center">
+    <span id="number">0</span>
+  </div>
+  <div class="btns center">
+    <span class="btn btn-add">+</span>
+    <span class="btn btn-subtract">-</span>
+  </div>
+
+  <script type="text/javascript">
+    addBtn = document.getElementsByClassName('btn-add')[0];
+    subtractBtn = document.getElementsByClassName('btn-subtract')[0];
+    number = document.getElementById('number');
+
+    addBtn.addEventListener('click',function(){
+      number.innerHTML = parseInt(number.innerHTML)+1;
+    });
+    subtractBtn.addEventListener('click',function(){
+      number.innerHTML = parseInt(number.innerHTML)-1;
+    });
+  </script>
+</body>
+</html>
